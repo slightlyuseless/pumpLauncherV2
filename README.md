@@ -3,9 +3,17 @@
 
 PumpLaunch V2 is a production-ready control center for orchestrating Pump.fun launches and trading flows. It pairs an Express API with a React dashboard to create tokens, manage wallet fleets, and coordinate buys/sells from one screen. The app talks to the [PumpPortal local API](https://pumpportal.fun/) for creation/trading.
 
-| Dashboard Overview | Trading Hub | Wallet Cards |
+### Console walkthrough
+
+<div align="center">
+  <video src="doc-assets/console_preview.mp4" controls title="PumpLaunch V2 console preview" style="max-width: 100%;"></video>
+</div>
+
+### Screenshots
+
+| Token Templates | Trading Hub | Utilities |
 | --- | --- | --- |
-| ![Dashboard overview](doc-assets/dashboard-overview.png) | ![Trading hub](doc-assets/trading-hub.png) | ![Wallet cards](doc-assets/wallet-cards.png) |
+| ![Token templates](doc-assets/tokenTemplates_preview.png) | ![Trading hub](doc-assets/tradingHub_preview.png) | ![Utilities](doc-assets/utilities_preview.png) |
 
 ## Features
 
@@ -25,6 +33,8 @@ PumpLaunch V2 is a production-ready control center for orchestrating Pump.fun la
 - Optional `.env` to override defaults in `src/config.js` (see `.env.example`)
 
 ## Installation
+
+Windows quick install: run `install.bat`.
 
 ```bash
 # from repo root
@@ -48,7 +58,7 @@ Open `http://localhost:3000` (or Vite dev URL) to use the dashboard.
 
 ## Usage Guide
 
-1. Link a contract (mint): paste a mint in the contract box and click Add. It’s added to Tracked Tokens and becomes the active mint for all wallets.
+1. Link a contract (mint): paste a mint in the contract box and click Add. It's added to Tracked Tokens and becomes the active mint for all wallets.
 2. Manage wallets: generate/import buyers, assign a dev wallet, export keys, or remove. Each card lets you pick a mint, refresh its balance, and run buy/buy%/sell.
 3. Launch tokens: build a template (name, symbol, description, artwork, dev wallet, fees) and launch sequentially or in parallel. Mint/tx and Pump.fun link are shown on success.
 4. Trade in bulk: select wallets, set concurrency/slippage/fees, and run Buy Selected or Sell Selected. Per-wallet overrides are respected.
