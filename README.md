@@ -3,16 +3,6 @@
 
 PumpLaunch V2 is a production-ready control center for orchestrating Pump.fun launches and trading flows. It pairs an Express API with a React dashboard to create tokens, manage wallet fleets, and coordinate buys/sells from one screen. The app talks to the [PumpPortal local API](https://pumpportal.fun/) for creation/trading.
 
-### Console walkthrough
-
-GitHub does not inline video playback in README files, so click the preview below to download/play the MP4.
-
-<div align="center">
-  <a href="doc-assets/console_preview.mp4">
-    <img src="doc-assets/tradingHub_preview.png" alt="PumpLaunch V2 console preview" style="max-width: 100%;">
-  </a>
-</div>
-
 ### Screenshots
 
 | Token Templates | Trading Hub | Utilities |
